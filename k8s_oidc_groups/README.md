@@ -1,7 +1,7 @@
-# Setup AzureAD OIDC on ARO
+# Setup AzureAD OIDC on ARO with OIDC based mapping for groups
 
 This directory contains Terraform config that is used to add `OpenID Azure AD` oAuth Identity Provider as well
-as add AzureAD secret to an existing ARO cluster.
+as add AzureAD secret to an existing ARO cluster. It is similar to the terraform code in k8s_oidc directory with addition of the group mapper introduced starting with OCP 4.10 (https://mobb.ninja/docs/idp/group-claims/aro/ for details)
   
 Execute following commands and substitute all the properties values with correct values in `custom.tfvars` file:
 ```
