@@ -14,5 +14,9 @@ on these directories:
   * This directory contains Terraform config that can be used to import existing `oidc` resource
     and add `oidc AAD` identity provider as well as create a `Secret` for AzureAD.
 
+* [k8s_oidc_groups](k8s_oidc_groups/README.md)
+ * This directory contains Terraform config that can be used to import existing `oidc` resource
+   with additional `groups` claim to enable mapping between AAD groups and kubernetes groups (https://mobb.ninja/docs/idp/az-ad-grp-sync/ ) and add `oidc AAD` identity provider as well as create a `Secret` for AzureAD.
+
 ## Note
 Please make sure that the `kube_config_path` variable has same value in the two directories above
